@@ -21,4 +21,26 @@ const article = {
     "createdAt": "NOVEMBER 28, 2018"
   };
 
-a = bb;
+
+  //////////// Creating methods for an Object///////////////////////////////////
+  /**
+   * A method is aa special property of js objects, methods are functions that are also properties of an object
+   */
+  let dog = {
+    name: "Spot",
+    numLegs: 4,
+    sayLegs: function(){return "This dog has " + dog.numLegs + " legs."}
+  };
+  console.log(dog.sayLegs());
+////////////////Making code more reusable with *this* keyword////////////
+ dog = {
+  name: "Spot",
+  numLegs: 4,
+  sayLegs: function() {return "This dog has " + this.numLegs + " legs.";}
+};
+
+console.log(dog.sayLegs());
+
+
+
+////////////////////////Defining a constructor function////////////
