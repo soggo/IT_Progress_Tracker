@@ -21,6 +21,4 @@ const article = {
     "createdAt": "NOVEMBER 28, 2018"
   };
 
-  console.log(ourStorage.cabinet.top_g.folder2);
-  console.log(ourStorage.desk.drawer);
-
+a = bb;
