@@ -61,7 +61,7 @@ function House(numBedrooms) {
 let myHouse = new House(4)
 
 let a00 = myHouse instanceof House
-console.log(a)
+console.log(a00)
 
 ///////////////Understand Own Properties//////////////////////////////
 function Bird(name) {
@@ -129,4 +129,36 @@ Dogx.prototype = {
     return ("My name is " + this.name)
   }
 };
+////////////////////////////////////////Using Inheritance////////////////
+function Cat(name) {
+  this.name = name;
+}
 
+Cat.prototype = {
+  constructor: Cat
+ 
+};
+
+function Bear(name) {
+  this.name = name;
+}
+
+Bear.prototype = {
+  constructor: Bear
+ 
+};
+
+function Animal() { }
+
+Animal.prototype = {
+  constructor: Animal,
+
+  eat: function() {
+   return ("nom nom nom");
+  }
+
+};
+
+Dog.prototype = Object.create(Animal.prototype);
+let doggy = new Dog()
+console.log(doggy.eat())
