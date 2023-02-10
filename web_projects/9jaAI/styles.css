@@ -7,13 +7,13 @@
 body{
     width: auto;
     height: auto;
-    background-color: rgb(255, 247, 247);
+    background-color: #fceded;
 }
 
 
 .nav-container{
     width: 100%;
-    height: 100%;
+    height: auto;
    color: black;
    
 }
@@ -25,13 +25,16 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     padding: 1%;
+    background-color: rgb(255, 244, 224);
+    
 }
 
 ul{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;   
+}
+ul>li{
     list-style: none;
-    
 }
 
 nav>ul>li{
@@ -62,7 +65,7 @@ nav>h1>a:active{
     
 
 nav>ul>li>a:hover{
-    text-decoration: none;
+    /* text-decoration: none; */
     color: cadetblue;
     opacity: 50%;       
 }
@@ -78,18 +81,18 @@ nav>ul>li>a:active{
 
 .hero-container{
     box-sizing: border-box;
-    margin-top: 2%;
+    margin-top: 0%;
     width: 100%;
    
 }
 .hero{
     box-sizing: border-box;
     width: 99%;
-    height: 40%;
-    /* border: 1px white solid; */
+    height: auto;
+    
     display: flex;
     flex-direction: row-reverse;
-    
+    margin-top: 0%;  
 }
 
 .hero>h1{
@@ -116,8 +119,8 @@ nav>ul>li>a:active{
 
 img{
     box-sizing: border-box;
-    width: 50%;
-    height: 50%;
+    width: auto%;
+    height: auto;
     /* border: 1px solid white; */
     margin-right: 15%;
 }
@@ -161,4 +164,50 @@ text-align: center;
     margin-right: 5%;
     font-size: 1.8em;
 
+}
+
+
+
+/* =====================Misson page==================== */
+ol{
+   margin-top: 10%;
+    margin-left: 2%;
+    margin-left: 4%;
+    line-height: 1.5em;
+    font-size: 1.5rem;
+}
+
+footer{   
+    position: fixed;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;                      
+    
+    font-size: 2rem;
+    background-color: black;
+    color: cadetblue;
+    text-align: center;
+    bottom: 0;
+}
+footer>p>a{
+    text-decoration: none;
+    color: white;
+}
+
+footer>p>a:active{
+    text-decoration: none;
+    color: cadetblue;
+}
+footer>p>:hover{
+    color: chartreuse;
+}
+
+
+@media only screen and (max-width:1047px){
+    img{
+        box-sizing: border-box;
+        width: 0%;
+        height: 0%;
+        border: 1px solid black;
+    }   
 }
