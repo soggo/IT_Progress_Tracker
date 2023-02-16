@@ -209,8 +209,7 @@ const watchList = [
 const ratings = watchList.map(item => ({
   title: item["Title"],
   rating: item["imdbRating"]
-}));;
- 
+}));
 
   
   console.log(JSON.stringify(ratings));
@@ -246,8 +245,53 @@ console.log(x23)
 
 // Only change code below this line
 
-const filteredList = watchList.filter(i =>);
+
+
+const filteredlist = ratings.filter(i => i.rating >= 8)
 
 // Only change code above this line
+console.log(filteredlist)
 
-console.log(filteredList);
+/////////////////////////////////////////////Slicing functionaly//////////////////////////////////////////
+function sliceArray(anim, beginSlice, endSlice) {
+ return anim.slice(beginSlice,endSlice)
+}
+
+const inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
+console.log(sliceArray(inputAnim, 1, 3));
+
+
+//////////////////using concat to avoid mutation////////////
+function nonMutatingConcat(original, attach) {
+  // Only change code below this line
+return first.concat(second)
+
+  // Only change code above this line
+}
+
+const first = [1, 2, 3];
+const second = [4, 5];
+console.log(nonMutatingConcat(first, second));
+
+
+///////////////////////////////Alphabet sort////////////////
+function alphabeticalOrder(arr) {
+  // Only change code below this line
+ return arr.sort(function(a, b) {
+    return a === b ? 0 : a > b ? 1 : -1;
+  });
+
+}
+
+console.log(alphabeticalOrder(["a", "d", "c", "a", "z", "g"]));
+
+const globalArray = [5, 6, 3, 2, 9];
+
+function nonMutatingSort(arr) {
+let newarr =[...arr]  
+return newarr.sort(function(a,b){
+  return a-b
+})
+}
+
+console.log(nonMutatingSort(globalArray));
