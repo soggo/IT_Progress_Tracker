@@ -239,3 +239,15 @@ const ratings = watchList.map(item => ({
 
 let x23 = [1,2,3,4].myMap(x => x*2)
 console.log(x23)
+
+
+////////////////////Using filter high order function////////////
+// Using earlier array
+
+// Only change code below this line
+
+const filteredList = watchList.filter(i =>);
+
+// Only change code above this line
+
+console.log(filteredList);
