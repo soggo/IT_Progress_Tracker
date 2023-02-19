@@ -20,7 +20,7 @@
       
         p {
           font-size: 16px;
-          font-family: Monospace;
+         
         }
       
         .thick-green-border {
@@ -35,11 +35,11 @@
         }
       </style>
       <div class="container-fluid">
-      <h2 class="red-text text-center">CatPhotoApp</h2>
+      <h2 class="text-primary text-center">CatPhotoApp</h2>
       
       <p>Click here for <a href="#">cat photos</a>.</p>
       
-      <a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      <a href="#"><img class="img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
       <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" alt="" class="img-responsive">
       
       
@@ -62,8 +62,13 @@
         <label><input type="checkbox" name="personality"> Lazy</label>
         <label><input type="checkbox" name="personality"> Crazy</label>
         <input type="text" placeholder="cat photo URL" required>
-        <button class="btn btn-primary btn-block">Submit</button>
-        <button type="button" class="btn btn-primary">Like</button>
+        <div class="row">       
+        <div class="col-xs-4"><button class="btn btn-primary btn-block">Submit</button></div>
+        <div class="col-xs-4"><button type="button" class="btn btn-block btn-primary">Like</button></div>
+        <div class="col-xs-4"><button class="btn btn-block btn-info">Info</button></div>
+        <div class="col-xs-4"><button class="btn-block btn btn-danger">Delete</button></div>
+      </div>
+ 
       </form>
     </div>
 </body>
