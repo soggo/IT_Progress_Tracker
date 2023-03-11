@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color:#fdfbfd;
+
+}
+
+/* ===============================HERO STYLING===================================== */
+.hero{
+    display: flex;
+     gap:25%; 
+    padding: 4%;
+    color:#541f53;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align:left;
+    width: 40%;
+
+}
+
+.hero-text h1{
+    font-size: 4em;
+}
+
+.hero-text p{
+    background-color:#fdfbfd;
+    color: #9a939a;
+}
+
+.hero-text p{
+    margin-top: 15px;
+    background-color: none;
+    font-size: large;
+}
+
+
+/* ===========================TESTIMONAILS STYLING====================================== */
+.box{
+    background-color:#f7f2f8;
+    margin-top: 2%;
+    width: 35rem;
+    height: 3.5em;
+    border-radius: 9px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.guru{
+    margin-left: 5rem;
+}
+
+.bestTech{
+    margin-left: 10rem;
+}
+
+
+.testimonies{
+    display: flex;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-top: 2%;
+    padding: 0  5%;
+
+}
+
+.user{
+    display: flex;   
+    flex-direction: column;
+    width: 50rem;
+    height: 15rem;
+    justify-content: center;
+    padding: 0 3%;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 20px;
+}
+
+.user p{
+    margin: 4%;
+    text-align:left;
+}
+
+#n2{
+   margin-top: 2%; 
+}
+
+#n3{
+    margin-top: 4%;
+}
+
+.verified{
+    display: flex;
+    align-items: center;
+    gap: 6%;
+}
+.verified>img{
+    border-radius: 60px;
+    width: 45px;
+    height: 45px;
+}
+
+
+.white-text{
+   color:  hsl(300, 24%, 96%);
+}
+
+.purple-text{
+    color: hsl(333, 80%, 67%);
+}
+
+.user p{
+    color:  hsl(300, 24%, 96%);
+}
+
+/* ==========================================FOOTER STYLING============= */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #d3d3d3 ;
+    color: cadetblue;
+    text-align: center;
+    padding: 10px;
+ }
+
+
+ footer a{
+    text-decoration: none;
+    color: rgb(48, 89, 90);
+ }
+ 
+
+ footer a:hover{
+    color:rgb(0, 170, 0);
+ }
