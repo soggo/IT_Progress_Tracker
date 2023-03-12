@@ -14,7 +14,7 @@ body{
     align-items: center;
 
 }
-
+/* =======================================HERO STYLING====================== */
 .hero-container{
     display: flex;
     justify-content: space-between;
@@ -26,14 +26,10 @@ body{
 }
 
 .hero-text{
-    display: flex;
-    flex-direction: column;
+    padding-top: 5%;
     height: 40rem;
     width:  50%;
-    align-items: start;
-    justify-content: center;
     background-color: #ffffff;   
-    text-align: center;
     width: 30rem;
     border-top-right-radius:35px;
     border-bottom-right-radius: 35px;
@@ -82,6 +78,8 @@ body{
     border-bottom-left-radius: 35px;
     /* border: 4px solid black; */
 }
+
+/* ============================PRICING STYLES======================== */
 .hero-prices{
     display: flex;
     align-items: center;
@@ -100,6 +98,8 @@ body{
     color: #b4b4be;
     text-decoration:line-through;
 }
+
+/* =============================BUTTON STYLES================================== */
 button{ 
     margin-top: 3%;
     background-color:#3c8067;
@@ -115,6 +115,34 @@ button{
     border-radius: 10px;
     font-size: medium;
 }
+
+button:active{
+    background-color: #103023;
+}
+
+footer {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #d3d3d3 ;
+    color: cadetblue;
+    text-align: center;
+    padding: 10px;
+ }
+
+
+ footer a{
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(36, 68, 68);
+ }
+ 
+
+ footer a:hover{
+    color:rgb(0, 170, 0);
+ }
+ 
 
 
 
