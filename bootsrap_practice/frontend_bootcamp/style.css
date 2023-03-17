@@ -1,0 +1,22 @@
+body::before{
+    display: block;
+    content: " ";
+    height: 60px;
+}
+
+footer a{
+    color: rgb(69, 226, 231);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover{
+    color: rgb(252, 252, 252);
+}
+
+@media(min-width :768px){
+    .news-input{
+        width: 50;
+    }
+}
+ 
