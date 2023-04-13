@@ -1,3 +1,6 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
 body{
     background-color: #fafafa;
 }
@@ -27,6 +30,9 @@ body{
 
 .lead{
     color: black;
+    margin-right: 25px;
+    text-justify: distribute;
+    font-size: medium;
 }
 
 .ocean{
